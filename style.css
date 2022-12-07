@@ -1,0 +1,313 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: Gilroy, sans-serif;
+}
+
+body {
+    padding-inline-start: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(./assets/fonts/FontsFree-Net-Gilroy2.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Gilroy-bold';
+    src: url(./assets/fonts/FontsFree-Net-Gilroy-Bold.ttf);
+    font-weight: 500;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header_menu {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #828282;
+    padding-bottom: 20px;
+}
+
+.header_item {
+    margin: 10px;
+    list-style-type: none;
+    position: relative;
+}
+
+.header_item:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    bottom: 1px;
+    background-color: #625f5f;
+    transition: 0.2s width ease-in;
+}
+
+.header_item:hover:before {
+    width: 100%
+}
+
+.header_item a{
+    text-decoration: none;
+    color: #828282;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: Gilroy;
+}
+
+.header_item a:hover {
+    color: black;
+}
+
+.header {
+    padding: 20px;
+}
+
+.intro {
+    padding-bottom: 35px;
+}
+
+.intro__row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.intro__photo img{
+    width: 83%;
+    border-radius: 50%;
+    border: 10px solid black;
+}
+
+.intro__personal {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro__image {
+    text-align: end;
+}
+
+.intro__image img {
+    width: 65%;
+}
+
+.intro__name{
+    margin-bottom: 10px;
+    font-size: 35px;
+    align-self: end;
+    font-family: Gilroy-bold, sans-serif;
+}
+
+.intro__info {
+    width: 55%;
+    align-self: end;
+    font-size: 20px;
+    font-family: Gilroy, sans-serif;
+    margin-bottom: 20px;
+}
+
+.about {
+    background-color: #F6F6F6;
+    padding: 30px 0px;
+}
+
+.about__info {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.about__title {
+    text-align: center;
+}
+
+.title {
+    font-size: 34px;
+    line-height: 42px;
+    font-family: Gilroy, sans-serif;
+}
+
+.about__subtitle {
+    text-align: center;
+    font-family: Gilroy, sans-serif;
+}
+
+.about__subtitle p{
+    margin-bottom: 40px;
+}
+
+.about__subtitle p:nth-child(3) {
+    margin-bottom: 0px;
+}
+
+.skills__row {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills__title {
+    text-align: center;
+}
+
+.skills__subtitle {
+    font-size: 25px;
+    font-family: Gilroy, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills__columns {
+    display: flex;
+}
+
+.skills__column {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.skills {
+    padding: 30px 0px;
+}
+
+.column_image img{
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.column_info {
+    color: #828282;
+    font-family: Gilroy-bold, sans-serif;
+    font-size: 24px;
+}
+
+.courses {
+    padding: 30px 0px;
+}
+
+.courses__title {
+    text-align: center;
+}
+
+.courses__block {
+    text-align: center;
+}
+
+.courses__items {
+    display: inline-flex;
+    list-style-type: none;
+    justify-content: space-around;
+    width: 100%;
+    padding-inline-start: unset;
+}
+
+.courses__item {
+    width: 33.3%;
+    color: black;
+    font-size: 25px;
+    font-family: Gilroy-bold, sans-serif;
+}
+
+.courses__item a:hover {
+    transform: scale3d(1.5, 1.5, 1.5);
+    transform: translate(30px, 10px);
+    transition-duration: 0.5s;
+}
+
+
+.courses__item a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-family: Gilroy-bold, sans-serif;
+    display: block;
+}
+
+.code-ex__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.code-ex__code {
+    font-size: 25px;
+}
+
+.announce {
+    color: rgb(101, 5, 101)
+}
+
+.return {
+    color: rgb(247, 98, 6);
+}
+
+.code-ex {
+    padding: 30px 0px;
+    background-color: #cccccc;
+}
+
+.info__row {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.info__item {
+    width: 33.3%;
+    list-style-type: none;
+    font-size: 20px;
+    font-family: Gilroy-bold, sans-serif;
+    align-items: center;
+}
+
+.info__item li{
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+
+.info__item a{
+    text-decoration: none;
+    color: black;
+}
+
+.info {
+    padding: 30px 0px;
+}
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.footer__hublogo img{
+    width: 15%;
+}
+
+.footer__rslogo img {
+    width: 65%;
+
+}
+
+.footer__hublogo {
+    width: 33.3%;
+}
+
+.footer__year {
+    width: 33.3%
+}
+
+.footer__rslogo {
+    width: 33.3%
+}
