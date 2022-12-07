@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header_row">
+                <nav>
+                    <ul class="header_menu">
+                        <li class="header_item">
+                            <a href="#about">About me</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#skills">Skills</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#courses">Courses</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#example">Code example</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#info">Experience</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#info">Courses</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#info">Languages</a>
+                    </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="intro">
+            <div class="container">
+                <div class="intro__row">
+                    <div class="intro__photo">
+                        <img src="./assets/photo_2022-12-06 17.39.22.jpeg" alt="My photo">
+                    </div>
+                    <div class="intro__personal">
+                        <div class="intro__name">Roman Greshchik</div>
+                        <div class="intro__info">Technical account manager, 27 years old</div>
+                        <div class="intro__image">
+                            <img src="./assets/settings.png" alt="tools logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <div class="container">
+                <div class="about__info">
+                    <div id="about" class="about__title title">
+                        <h1>About me</h1>
+                    </div>
+                    <div class="about__subtitle">
+                        <p>Hi, my name is Roma, I'm 27 years old and I'm working as Technical account manager. </p>
+                        <p>I have already tried to enter Pre-school course in RSSchool, but to tell the precise truth at that time I was not ready and had not enough time for studying</p>
+                        <p> I will do my best to finish this course and other steps of the Frontend developer's path and make dream real!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skills">
+            <div class="container">
+                <div class="skills__block">
+                    <div class="skills__row">
+                        <div class="skills__title title">
+                            <h2 id="skills">Skills</h2>
+                        </div>
+                        <div class="skills__subtitle">
+                            I have already tried myself in:
+                        </div>
+                        <div class="skills__columns">
+                            <div class="skills__column">
+                                <div class="column_image">
+                                    <img src="./assets/html.png" alt="HTML logo">
+                                </div>
+                                <div class="column_info">HTML</div>
+                            </div>
+                            <div class="skills__column">
+                                <div class="column_image">
+                                    <img src="./assets/css-3.png" alt="CSS logo">
+                                </div>
+                                <div class="column_info">CSS</div>
+                            </div>
+                            <div class="skills__column">
+                                <div class="column_image">
+                                    <img src="./assets/java-script.png" alt="JS logo">
+                                </div>
+                                <div class="column_info">JS</div>
+                            </div>
+                            <div class="skills__column">
+                                <div class="column_image">
+                                    <img src="./assets/sass.png" alt="SASS logo">
+                                </div>
+                                <div class="column_info">SCSS</div>
+                            </div>
+                            <div class="skills__column">
+                                <div class="column_image">
+                                    <img src="./assets/git.png" alt="GIT logo">
+                                </div>
+                                <div class="column_info">GIT</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="courses">
+            <div class="container">
+                <div class="courses__title">
+                    <h2 class="title" id="courses">Courses</h2>
+                </div>
+                <div class="courses__block">
+                    <ul class="courses__items">
+                        <li class="courses__item">
+                            <a href="https://learn.javascript.ru/">JavaScript(basic)</a>
+                        </li>
+                        <li class="courses__item">
+                            <a href="https://www.udemy.com/">HTML + CSS</a>
+                        </li class="courses__item">
+                        <li class="courses__item">My friend - JS Backend Developer</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="code-ex">
+            <div class="container">
+                <div class="code-ex__row">
+                    <div class="code-ex__title">
+                        <h2 class="title" id="example">Code example</h2>
+                    </div>
+                    <div class="code-ex__code">
+                        <pre>
+                            <code class="code-ex__function">
+                                <span class="announce">function</span> remove (string) {
+                                    <span class="announce">if</span> (string.endsWith('!')) {
+                                      <span class="return">return</span> string.slice(0, -1);
+                                    } <span class="announce">else if</span> (string.startsWith('!')) return string;
+                                    <span class="announce">else</span> <span class="return">return</span> string;
+                                  }
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info" id="info">
+            <div class="container">
+                <div class="info__row">
+                    <div class="info__item">
+                        <div class="info__exp">
+                            <a href="https://github.com/methfoxxkaiju/rsschool-cv/blob/gh-pages/cv.md">My first markdown CV</a>
+                        </div>
+                    </div>
+                    <div class="info__item">
+                        <div class="info__lang">
+                            <ul class="info__langlist">
+                                <li class="info__langitem">Russian - native speaker</li>
+                                <li class="info__langitem">English - B1-B2</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info__item">
+                        <div class="info__contacts">
+                            <ul class="info__contlist">
+                                <li class="info__contitem">
+                                    <a href="mailto:veselchaak@icloud.com">E-mail</a>
+                                </li>
+                                <li class="info__contitem">Discord nickname: Roman Greshchik(romangreshchik)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__hublogo">
+                    <a href="https://github.com/methfoxxkaiju"><img src="./assets/github.png" alt="gitgub logo"></a>
+                </div>
+                <div class="footer__year">Made in 2022</div>
+                <div class="footer__rslogo">
+                   <a href="https://rs.school/js/"><img src="./assets/rs_school_js.svg" alt="rsschool logo"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
+
